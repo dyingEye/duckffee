@@ -5,24 +5,41 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Duckffee</title>
 <style>
-  :root { --bg: #fbfaf7; --fg: #1d1b18; --muted: #6b665e; --accent: #8a5a12; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #15130f; --fg: #ece7de; --muted: #a39d92; --accent: #e0b25c; } }
-  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.7 -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif; }
+  :root { --bg: #fbfaf7; --fg: #1d1b18; --muted: #6b665e; --accent: #8a5a12; --line: #e7e2d8; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #15130f; --fg: #ece7de; --muted: #a39d92; --accent: #e0b25c; --line: #2c2924; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.7 -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Hiragino Sans", "PingFang SC", system-ui, sans-serif; }
   main { max-width: 760px; margin: 0 auto; padding: 56px 16px; }
   a { color: var(--accent); }
   .muted { color: var(--muted); }
+  ul { padding-left: 1.2em; }
+  .support { border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin: 24px 0; }
+  .support p { margin: 6px 0; }
 </style>
 </head>
 <body>
 <main>
   <h1>Duckffee</h1>
   <p class="muted">Small games by one developer.</p>
+
   <h2>Games</h2>
   <ul>
-    <li><b>Hellgate Warden</b> · iOS / Android</li>
+    <li><b>천지옥 디펜스 · Hellgate Warden</b> <span class="muted">· iOS / Android</span></li>
+    <li><b>Stellar Hand</b> <span class="muted">· iOS · 출시 준비 중 · Coming soon</span></li>
+    <li><b>Ashen Vigil</b> <span class="muted">· iOS · 출시 준비 중 · Coming soon</span></li>
+    <li><b>잿빛 성전</b> <span class="muted">· iOS · 출시 준비 중 · Coming soon</span></li>
+    <li><b>Cat Blast</b> <span class="muted">· iOS · 출시 준비 중 · Coming soon</span></li>
   </ul>
+
+  <h2 id="support">문의 · Support</h2>
+  <div class="support">
+    <p><b>가장 빠른 방법: 게임 안 설정 → 문의하기</b><br><span class="muted">버그나 불편한 점을 적어 보내면 개발자가 바로 읽습니다.</span></p>
+    <p><b>Fastest: in the game, Settings → Contact us</b><br><span class="muted">The developer reads every message.</span></p>
+    <p><b>ゲーム内の 設定 → お問い合わせ から送ってください。</b></p>
+    <p><b>请在游戏内 设置 → 联系我们 发送。</b></p>
+    <p>이메일 · E-mail: <a href="mailto:tomnengwork@gmail.com">tomnengwork@gmail.com</a></p>
+  </div>
+
   <p><a href="privacy/">개인정보처리방침 · Privacy Policy</a></p>
-  <p>문의 · Support: <a href="mailto:tomnengwork@gmail.com">tomnengwork@gmail.com</a></p>
 </main>
 </body>
 </html>
